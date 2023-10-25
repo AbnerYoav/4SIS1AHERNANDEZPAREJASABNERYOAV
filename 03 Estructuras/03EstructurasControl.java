@@ -80,7 +80,7 @@ class EstructurasControl{
                 compra = lector.nextDouble();
 
                 System.out.println(" Ingrese su edad: ");
-                edad = scanner.nextInt();
+                edad = entrada.nextInt();
 
                 if (edad > 65 ){
 
@@ -89,15 +89,8 @@ class EstructurasControl{
 
                 } else if (edad <= 21 ){
                    System.out.println("¿Tus padres son socios? (Si/No)");
-                   String respuesta = scanner.nextLine();
-
-                   if (respuesta.equalsIgnoreCase("Si")){
-                    System.out.println("Recibiras un descuento del 45%");
-                   } else if (respuesta.equalsIgnoreCase("No")){
-                    System.out.println("No eres socio maldito pobre, ten un descuento del 25%");
-                   } else {
-                    System.out.println("Respuesta invalida. Por favor, responda 'Si' o 'No' .");
-                   }
+                   Scanner scanne = new Scanner(System.in);
+                opcion = scanner.nextInt();
 
                 }
                    break;
@@ -291,8 +284,14 @@ class EstructurasControl{
                     break;
 
                 case 8:
-
-                
+                long factorial = 1;
+                System.out.println("Bienvenido al programa para un factorial");
+                    System.out.println("Introduzca el numero para el factorial");
+                    int num = entrada.nextInt();
+                    for (int i = 1; i<= num; i++){
+                    factorial *= i;
+                    }
+                    System.out.println("El factorial de " + num + " es: " + factorial);
                     break;
 
                 case 9:
