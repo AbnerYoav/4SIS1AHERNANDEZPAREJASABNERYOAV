@@ -14,7 +14,7 @@ public class Tienda extends javax.swing.JFrame {
     double precio=0;
     int cantidad=0;
     DefaultTableModel modelo=new DefaultTableModel();
-    ArrayList<Venta> listaVentas=new ArrayList<Venta>();
+    ArrayList<Venta> listaVentas=new ArrayList<>();
     
     public Tienda(){
         initComponents();
